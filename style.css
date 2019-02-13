@@ -1,356 +1,96 @@
+.navbar{
+	background-color: white;
+}
+.navbar-brand{
+	font: 40px Georgia,serif;
+}
+p{
+	font: 30px Georgia,serif;
+	align-self: baseline;	
+}
+ul{
+	font: 20px Georgia,serif ;
+	font-style: italic;
+}
+.navbar-fixed-top {
+    top: 0;
+    border-width: 0 0 20px;
+}
 
-/* Table of Content
-==================================================
-#BASIC TYPOGRAPHY
-#MENU ITEM SECTION
-#RESERVATION SECTION
-*/
-/* BASE - Base tyles, Variables, Mixins, etc. */
-body {
-  background-color: #ffffff;
-  font-family: "Prata", serif;
-  color: #333333;
+a{
+	color: #fff;
+	font-weight: 900;
+	font-size: 20px;
+}
+ul button{
+	margin: 20px;
+}
+#aboutus{
+	margin-left: 85px;
+}
+.box{
+	margin: 10px;
+	padding: 20px;
+	padding-bottom: 50px;
+	background: #dddddd;
+	text-align: center;
+	font-family: "Times New Roman", serif;
+	border-radius: 5px;
+}
+
+
+#profile{
+	background-color: #5bc8ba!important;
+	text-align: center;
+	padding: 8px 15px;
   font-size: 15px;
-  overflow-x: hidden;
-}
-
-.no-padding {
-  padding: 0;
-}
-
-/* MODULES - Individual site components */
-ul {
-  padding: 0;
-  margin: 0;
-  list-style: none;
-}
-
-a {
-  text-decoration: none;
-  color: #333333;
-}
-
-a:hover,
-a:focus {
+  cursor: pointer;
   outline: none;
-  text-decoration: none;
-}
-
-h1, h2, h3, h4, h5, h6 {
-  font-family: "Open Sans", sans-serif;
-}
-
-h2 {
-  font-size: 30px;
-  font-weight: 700;
-  line-height: 40px;
-  margin: 0;
-}
-
-img {
+  color: #fff;
+  
   border: none;
+  border-radius: 15px;
+  box-shadow: 0 6px #0e5d53;
 }
 
-.mu-readmore-btn {
-  background-color: #fff;
-  font-family: "Open Sans", sans-serif;
-  display: inline-block;
-  font-size: 16px;
-  padding: 15px 35px;
-  position: relative;
-  -webkit-transition: all 0.5s;
-  -moz-transition: all 0.5s;
-  -ms-transition: all 0.5s;
-  -o-transition: all 0.5s;
-  transition: all 0.5s;
+#profile:hover {background-color: #3e8e41}
+
+#profile:active {
+  background-color: #3e8e41;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
 }
-.mu-readmore-btn::after {
-  bottom: 5px;
-  content: "";
-  left: 5px;
-  position: absolute;
-  right: 5px;
-  top: 5px;
-  -webkit-transition: all 0.2s;
-  -moz-transition: all 0.2s;
-  -ms-transition: all 0.2s;
-  -o-transition: all 0.2s;
-  transition: all 0.2s;
+.boxForm{
+	padding: 15px;
+	background: #ffffff;
+	margin-top: 10px;
+	border: 2px solid #888;
 }
-.mu-readmore-btn:hover, .mu-readmore-btn:focus {
-  color: #fff;
+.boxForm h2{
+	color: #000;
+	font-family: "Times New Roman", Times, serif;
+	font-weight: 800;
 }
-.mu-readmore-btn:hover::after, .mu-readmore-btn:focus::after {
-  bottom: 0px;
-  content: "";
-  left: 0px;
-  right: 0px;
-  top: 0px;
+.boxForm label{
+	padding-left: 20px;
+}
+.boxForm input{
+	margin-bottom: 10px;
+}
+.boxForm select{
+	margin-bottom: 10px;
+}
+footer{
+	margin-top: 30px;
+	padding: 20px;
+	background: #d9534f;
+	color: #fff;
+	font-family: "Times New Roman", Times, serif;
+	font-weight: 800;
+}
+footer span i{
+	padding-left: 30px;
+	
 }
 
-.mu-browsmore-btn {
-  background-color: #fff;
-  border: 1px solid #ccc;
-  display: inline-block;
-  font-size: 16px;
-  line-height: 18px;
-  letter-spacing: 0.5px;
-  padding: 12px 25px;
-  -webkit-transition: all 0.5s;
-  -moz-transition: all 0.5s;
-  -ms-transition: all 0.5s;
-  -o-transition: all 0.5s;
-  transition: all 0.5s;
-}
-.mu-browsmore-btn:hover, .mu-browsmore-btn:focus {
-  color: #fff;
-}
-
-.mu-send-btn {
-  background-color: transparent;
-  border: 1px solid #ccc;
-  display: inline-block;
-  font-size: 16px;
-  padding: 10px 18px;
-  -webkit-transition: all 0.5s;
-  -moz-transition: all 0.5s;
-  -ms-transition: all 0.5s;
-  -o-transition: all 0.5s;
-  transition: all 0.5s;
-}
-.mu-send-btn:hover, .mu-send-btn:focus {
-  color: #fff;
-}
-
-/* LAYOUTS - Page layout styles */
-
-
-#mu-restaurant-menu {
-  display: inline;
-  float: left;
-  width: 100%;
-  padding: 100px 0;
-}
-#mu-restaurant-menu .mu-restaurant-menu-area {
-  display: inline;
-  float: left;
-  width: 100%;
-}
-#mu-restaurant-menu .mu-restaurant-menu-area .mu-restaurant-menu-content {
-  display: inline;
-  float: left;
-  margin-top: 30px;
-  width: 100%;
-}
-#mu-restaurant-menu .mu-restaurant-menu-area .mu-restaurant-menu-content .mu-restaurant-menu {
-  display: inline-block;
-  width: 100%;
-  text-align: center;
-}
-#mu-restaurant-menu .mu-restaurant-menu-area .mu-restaurant-menu-content .mu-restaurant-menu li {
-  display: inline-block;
-  float: none;
-}
-#mu-restaurant-menu .mu-restaurant-menu-area .mu-restaurant-menu-content .mu-restaurant-menu li a {
-  font-family: "Open Sans", sans-serif;
-  font-size: 18px;
-  border-radius: 0;
-  color: black;
-  font-size: 18px;
-  margin: 0 15px;
-  -webkit-transition: all 0.5s;
-  -moz-transition: all 0.5s;
-  -ms-transition: all 0.5s;
-  -o-transition: all 0.5s;
-  transition: all 0.5s;
-}
-#mu-restaurant-menu .mu-restaurant-menu-area .mu-restaurant-menu-content .mu-restaurant-menu .active a,
-#mu-restaurant-menu .mu-restaurant-menu-area .mu-restaurant-menu-content .mu-restaurant-menu .active a:hover,
-#mu-restaurant-menu .mu-restaurant-menu-area .mu-restaurant-menu-content .mu-restaurant-menu .active a:focus {
-  background-color: #FFF;
-}
-#mu-restaurant-menu .mu-restaurant-menu-area .mu-restaurant-menu-content .mu-tab-content-area {
-  display: inline;
-  float: left;
-  width: 100%;
-  padding: 50px 0;
-}
-#mu-restaurant-menu .mu-restaurant-menu-area .mu-restaurant-menu-content .mu-tab-content-area .mu-tab-content-left {
-  display: inline;
-  float: left;
-  padding-right: 15px;
-  width: 100%;
-}
-#mu-restaurant-menu .mu-restaurant-menu-area .mu-restaurant-menu-content .mu-tab-content-area .mu-tab-content-right {
-  display: inline;
-  float: left;
-  padding-left: 15px;
-  width: 100%;
-}
-#mu-restaurant-menu .mu-restaurant-menu-area .mu-restaurant-menu-content .mu-tab-content-area .mu-menu-item-nav li {
-  border-bottom: 1px dashed #ccc;
-  display: inline;
-  float: left;
-  margin-bottom: 20px;
-  padding-bottom: 15px;
-  width: 100%;
-}
-#mu-restaurant-menu .mu-restaurant-menu-area .mu-restaurant-menu-content .mu-tab-content-area .mu-menu-item-nav li:last-child {
-  border-bottom: none;
-  margin-bottom: 0;
-}
-#mu-restaurant-menu .mu-restaurant-menu-area .mu-restaurant-menu-content .mu-tab-content-area .mu-menu-item-nav li .media .media-left {
-  width: 110px;
-  height: 110px;
-}
-#mu-restaurant-menu .mu-restaurant-menu-area .mu-restaurant-menu-content .mu-tab-content-area .mu-menu-item-nav li .media .media-left a img {
-  width: 110px;
-  height: 110px;
-}
-#mu-restaurant-menu .mu-restaurant-menu-area .mu-restaurant-menu-content .mu-tab-content-area .mu-menu-item-nav li .media .media-body .media-heading {
-  font-size: 20px;
-  margin-bottom: 10px;
-}
-#mu-restaurant-menu .mu-restaurant-menu-area .mu-restaurant-menu-content .mu-tab-content-area .mu-menu-item-nav li .media .media-body .media-heading a {
-  -webkit-transition: all 0.5s;
-  -moz-transition: all 0.5s;
-  -ms-transition: all 0.5s;
-  -o-transition: all 0.5s;
-  transition: all 0.5s;
-}
-#mu-restaurant-menu .mu-restaurant-menu-area .mu-restaurant-menu-content .mu-tab-content-area .mu-menu-item-nav li .media .media-body .mu-menu-price {
-  font-size: 16px;
-  font-weight: bold;
-  letter-spacing: 1.5px;
-  line-height: 20px;
-}
-#mu-restaurant-menu .mu-restaurant-menu-area .mu-restaurant-menu-content .mu-tab-content-area .mu-menu-item-nav li .media .media-body p {
-  margin-top: 10px;
-  font-size: 14px;
-}
-
-/*==================
-RESERVATION SECTION
-====================*/
-#mu-reservation {
-  background-color: #222;
-  display: inline;
-  float: left;
-  padding: 100px 0 ;
-  align: centre;
-  width: 100%;
-}
-#mu-reservation .mu-reservation-area {
-  display: inline;
-  float: left;
-  width: 100%;
-}
-#mu-reservation .mu-reservation-area .mu-title h2 {
-  color: #fff;
-}
-#mu-reservation .mu-reservation-area .mu-reservation-content {
-  display: inline;
-  float: left;
-  margin-top: 20px;
-  padding: 0 100px;
-  width: 100%;
-}
-#mu-reservation .mu-reservation-area .mu-reservation-content h3 {
-  color: #fff;
-  display: inline-block;
-  padding-bottom: 10px;
-  font-weight: bold;
-}
-#mu-reservation .mu-reservation-area .mu-reservation-content p {
-  color: #fff;
-  letter-spacing: 0.5px;
-  padding: 0 50px;
-  text-align: center;
-}
-#mu-reservation .mu-reservation-area .mu-reservation-content .mu-reservation-form {
-  margin-top: 30px;
-  text-align: center;
-}
-#mu-reservation .mu-reservation-area .mu-reservation-content .mu-reservation-form .form-control {
-  margin-bottom: 20px;
-}
-#mu-reservation .mu-reservation-area .mu-reservation-content .mu-reservation-form input[type="text"],
-#mu-reservation .mu-reservation-area .mu-reservation-content .mu-reservation-form input[type="email"] {
-  border-radius: 0;
-  color: #000;
-  height: 40px;
-}
-#mu-reservation .mu-reservation-area .mu-reservation-content .mu-reservation-form input[type="text"]:focus,
-#mu-reservation .mu-reservation-area .mu-reservation-content .mu-reservation-form input[type="email"]:focus {
-  box-shadow: none;
-}
-#mu-reservation .mu-reservation-area .mu-reservation-content .mu-reservation-form input[type="text"]::-webkit-input-placeholder,
-#mu-reservation .mu-reservation-area .mu-reservation-content .mu-reservation-form input[type="email"]::-webkit-input-placeholder {
-  color: #555;
-}
-#mu-reservation .mu-reservation-area .mu-reservation-content .mu-reservation-form input[type="text"]:-moz-placeholder,
-#mu-reservation .mu-reservation-area .mu-reservation-content .mu-reservation-form input[type="email"]:-moz-placeholder {
-  color: #555;
-}
-#mu-reservation .mu-reservation-area .mu-reservation-content .mu-reservation-form input[type="text"]::-moz-placeholder,
-#mu-reservation .mu-reservation-area .mu-reservation-content .mu-reservation-form input[type="email"]::-moz-placeholder {
-  color: #555;
-}
-#mu-reservation .mu-reservation-area .mu-reservation-content .mu-reservation-form input[type="text"]:-ms-input-placeholder,
-#mu-reservation .mu-reservation-area .mu-reservation-content .mu-reservation-form input[type="email"]:-ms-input-placeholder {
-  color: #555;
-}
-#mu-reservation .mu-reservation-area .mu-reservation-content .mu-reservation-form select {
-  border-radius: 0;
-  height: 40px;
-}
-#mu-reservation .mu-reservation-area .mu-reservation-content .mu-reservation-form select:focus {
-  box-shadow: none;
-}
-#mu-reservation .mu-reservation-area .mu-reservation-content .mu-reservation-form select option {
-  margin-bottom: 10px;
-  color: #000;
-}
-#mu-reservation .mu-reservation-area .mu-reservation-content .mu-reservation-form textarea {
-  border-radius: 0;
-  color: #000;
-  padding: 10px;
-}
-#mu-reservation .mu-reservation-area .mu-reservation-content .mu-reservation-form textarea:focus {
-  box-shadow: none;
-}
-#mu-reservation .mu-reservation-area .mu-reservation-content .mu-reservation-form textarea::-webkit-input-placeholder {
-  color: #555;
-}
-#mu-reservation .mu-reservation-area .mu-reservation-content .mu-reservation-form textarea:-moz-placeholder {
-  color: #555;
-}
-#mu-reservation .mu-reservation-area .mu-reservation-content .mu-reservation-form textarea::-moz-placeholder {
-  color: #555;
-}
-#mu-reservation .mu-reservation-area .mu-reservation-content .mu-reservation-form textarea:-ms-input-placeholder {
-  color: #555;
-}
-#mu-reservation .mu-reservation-area .mu-reservation-content .mu-reservation-form button[type="submit"] {
-  border: none;
-  margin-top: 20px;
-  margin-left: 15px;
-}
-
-.datepicker {
-  border-radius: 0;
-  padding: 6px 10px;
-}
-
-.datepicker .datepicker-switch, .datepicker .prev, .datepicker .next, .datepicker tfoot tr th {
-  font-size: 20px;
-}
-
-.table-condensed > thead > tr > th, .table-condensed > tbody > tr > th, .table-condensed > tfoot > tr > th, .table-condensed > thead > tr > td, .table-condensed > tbody > tr > td, .table-condensed > tfoot > tr > td {
-  padding: 6px;
-}
-
-.datepicker table tr td.day:hover {
-  color: #fff;
-}
 
